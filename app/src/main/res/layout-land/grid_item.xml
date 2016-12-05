@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:tag="Bottom2"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="300dp">
+        <!--箭头-->
+        <ImageView
+            android:id="@+id/magnifier2"
+            android:src="@drawable/youbiangreen"
+            android:layout_width="65dp"
+            android:background="#f7e79c"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:layout_height="match_parent" />
+        <!--投苗-->
+        <ImageView
+            android:id="@+id/star2"
+            android:src="@drawable/touyumiao80"
+            android:layout_width="65dp"
+            android:background="#f7e79c"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:layout_height="match_parent" />
+        <!--换水-->
+        <ImageView
+            android:id="@+id/star6"
+            android:src="@drawable/huanshui80"
+            android:layout_width="65dp"
+            android:background="#f7e79c"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="match_parent" />
+        <!--用药-->
+        <ImageView
+            android:id="@+id/star3"
+            android:src="@drawable/yongyao801"
+            android:layout_width="65dp"
+            android:background="#f7e79c"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="match_parent" />
+        <!--投饵料-->
+        <ImageView
+            android:id="@+id/star4"
+            android:src="@drawable/touerliao80"
+            android:layout_width="65dp"
+            android:background="#f7e79c"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        >
+
+        <!--左view-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundColor"
+            android:orientation="vertical"
+            android:layout_weight="15"
+            >
+
+            <!--    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="6.5"
+                android:background="#E0EEE0"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/chitang"
+                    />
+                <!--池塘编号显示区-->
+                <TextView
+                    android:id="@+id/position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:orientation="horizontal"
+                android:background="#E0EEE0"
+                >
+                <!--这里是最大的view-->
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:layout_weight="0.6"
+                    android:padding="2dp"
+                    android:orientation="vertical"
+                    >
+                    <!--养殖种类-->
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/yangzhizhonglei"
+                        android:padding="2dp" />
+                    <ListView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:id="@+id/listtype"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:padding="2dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.6">
+                    <!--水质预警-->
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/shuizhiyujing"
+                        />
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/jingbao80"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+                    <!--投饵料计时-->
+                    <ImageView
+                        android:padding="3dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/shejijishi"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+                    <!--换水计时-->
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/huanshuijishi"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:background="#E0EEE0"
+                >
+                <!--出塘操作-->
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <!--右view-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#E0EEE0"
+            android:layout_weight="85"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:background="#E0EEE0"
+                android:src="@drawable/gengduocaozuo"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shou.suyuan.tablesuyuan">
+    <uses-sdk tools:overrideLibrary="org.lucasr.twowayview, org.lucasr.twowayview.widget, jp.wasabeef.recyclerview" />
+    <application
+        tools:replace="android:icon"
+        android:allowBackup="true"
+        android:icon="@drawable/fishtop"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity"
+            android:theme="@style/Translucent" />
+        <activity android:name=".DialogActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+        <activity android:name=".DialogActivity1"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+        <activity android:name=".DialogActivity2"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+        <activity android:name=".DialogActivity3"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+        <activity android:name=".DialogActivity4"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+        <activity android:name=".DialogActivity5"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+        <activity android:name=".DialogActivity6"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+        <activity android:name="com.shou.suyuan.tablesuyuan.ListViewExample" />
+        <activity android:name="com.shou.suyuan.tablesuyuan.GridViewExample" />
+        <activity android:name=".NestedExample" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+
+</manifest>

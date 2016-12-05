@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <!--  <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:layout_centerInParent="true">-->
+     <!--底板-->
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:tag="Bottom2"
+        android:layout_width="400dp"
+        android:layout_height="400dp">
+        <TableLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+            <!--表格第一行-->
+            <TableRow>
+            <ImageView
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:id="@+id/huadongseting"
+                android:src="@drawable/seting"
+                android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:text="功能"
+                    android:textColor="#FFCC00"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp" />
+            </TableRow>
+            <!--第二行-->
+            <TableRow
+                >
+                <RelativeLayout
+                    android:layout_height="160dp"
+                    android:layout_width="100dp">
+                    <!--00BA9B--><!--换水操作-->
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/op_huanshui"
+                        android:src="@drawable/huanshui80"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_height="160dp"
+                    android:layout_width="100dp"
+                    >
+                    <!--用药操作-->
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/op_yongyao"
+                        android:src="@drawable/yongyao801"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_height="160dp"
+                    android:layout_width="100dp"
+                    >
+                    <!--投饵料-->
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/op_touerliao"
+                        android:src="@drawable/touerliao80"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_height="160dp"
+                    android:layout_width="100dp"
+                    >
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/op_toumiao"
+                        android:src="@drawable/touyumiao80"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp" />
+                </RelativeLayout>
+                </TableRow>
+            <!--第三行-->
+            <TableRow>
+                <RelativeLayout
+                    android:layout_height="160dp"
+                    android:layout_width="100dp"
+                    android:layout_alignParentTop="true"
+                    >
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/op_fubiaoguanli"
+                        android:src="@drawable/fubiaoguanli"
+                        android:layout_width="61dp"
+                        android:layout_height="66dp"
+                         />
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <!--表面-->
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        tools:background="@color/black_overlay">
+                <LinearLayout
+                    android:background="@drawable/beijing2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <!--这里是最大的view-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <ImageView
+                            android:id="@+id/im_chitang"
+                            android:layout_centerInParent="true"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/chitang"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/position"
+                            android:layout_below="@+id/im_chitang"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:orientation="vertical"
+                        >
+                        <!--养殖种类-->
+                        <ImageView
+                            android:id="@+id/im_yangzhizhonglei"
+                            android:layout_gravity="center"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/yangzhizhonglei"
+                            android:layout_marginTop="20dp" />
+                 <ListView
+                     android:layout_height="match_parent"
+                     android:layout_width="match_parent"
+                     android:id="@+id/listtype"
+                   />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:orientation="vertical"
+                        >
+                        <!--水质预警-->
+                        <ImageView
+                            android:id="@+id/im_shuizhiyujing"
+                            android:layout_gravity="center"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/shuizhiyujing"
+                            android:layout_marginTop="20dp" />
+
+                        <!--<ImageView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/jingbao80"
+                            />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+                        <!--投饵料计时-->
+                        <ImageView
+                            android:id="@+id/im_erliaojishi"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/shejijishi"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+                        <!--换水计时-->
+                        <ImageView
+                            android:id="@+id/im_huanshuijishi"
+                            android:layout_gravity="center"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/huanshuijishi"
+                            android:layout_marginTop="20dp" />
+                    </LinearLayout>
+                    <!--向右滑-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        >
+                        <ImageView
+                            android:id="@+id/im_gengduocaozuo"
+                            android:layout_gravity="center"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/gengduocaozuo" />
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+</com.daimajia.swipe.SwipeLayout>
