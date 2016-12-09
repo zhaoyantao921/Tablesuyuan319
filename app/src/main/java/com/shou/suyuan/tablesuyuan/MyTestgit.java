@@ -7,7 +7,7 @@ import android.os.Bundle;
  * Created by zhao on 2016/12/5.
  */
 
-public class MyTest extends Activity {
+public class MyTestgit extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
